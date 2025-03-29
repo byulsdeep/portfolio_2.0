@@ -1,0 +1,174 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Title Page */
+#title-page {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+#title-page h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+#title-page p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Skill Stack */
+#skill-stack {
+    padding: 40px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+#skill-stack h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill {
+    margin: 20px;
+    text-align: center;
+}
+
+.skill-logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #4caf50; /* Green color */
+    border-radius: 5px;
+}
+
+/* Apps Section */
+#apps {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+#apps h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.app {
+    margin-bottom: 40px;
+}
+
+.app h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.app p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.app a {
+    display: block;
+    text-align: center;
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #title-page h1 {
+        font-size: 2.5rem;
+    }
+
+    #title-page p {
+        font-size: 1rem;
+    }
+
+    .skills {
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    .skill {
+        margin: 10px;
+    }
+}
+
+.video-container {
+    padding: 2%;
+    width: 100%;
+    max-width: 500px; /* Adjust as needed */
+    margin: auto;
+}
+
+video {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slideshow-container {
+    padding: 2%;
+    position: relative;
+    max-width: 100%;
+}
+.slide {
+    display: none;
+    width: 100%;
+}
+.slide img {
+    width: 100%;
+    height: auto;
+}
