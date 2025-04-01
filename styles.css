@@ -43,6 +43,10 @@ body {
     margin-bottom: 20px;
 }
 
+button {
+    padding: 2px;
+}
+
 /* Skill Stack */
 #skill-stack {
     padding: 40px 0;
@@ -55,10 +59,24 @@ body {
     margin-bottom: 30px;
 }
 
+.skill-stack-container {
+    display: flex;
+}
+
 .skills {
+    flex-basis: 33%;
+}
+
+.skills h3 {
+    padding: 5%;
+}
+
+.skill-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    height: 300px;
+    overflow-y: auto;
 }
 
 .skill {
@@ -136,9 +154,13 @@ footer {
         font-size: 1rem;
     }
 
-    .skills {
-        /* flex-direction: column; */
-        align-items: center;
+    .skill-stack-container {
+        display: block;
+    }
+    
+    .skill-container {
+        height: 150px;
+        overflow-y: auto;
     }
 
     .skill {
